@@ -1,0 +1,460 @@
+WEB DESIGN RULES AND FRAMEWORK-
+===============================================================================================================================
+Section Intro-
+
+Typography, spacing,images,color etc.
+Moto - To be able to design just enough that developer should know-
+
+===============================================================================================================================
+Proect Overview-
+
+<section></section>  ->sementic element which we should use over div for section.
+
+<span></span> ->generic inline element for text , does not have any meaning same as div element
+
+<blockquote></blockquote> ->for quoting someone in text and hence this is used. e.g. testimonial.
+
+**Before moving to next section understand the html and css well.
+===============================================================================================================================
+OVerview of web Design and Web Design Personalities-
+
+-**>Checked html and css code over the top. ->lets move on.
+
+<figure></figure>
+  
+    
+  The <figure> HTML element represents self-contained content, potentially with an optional caption, 
+  which is specified using the <figcaption> element. The figure, its caption, 
+  and its contents are referenced as a single unit
+
+
+Web Design Rules-
+Website personality-
+===============================================================================================================================
+Web Design Rule #1 Typography
+
+easy to read and appealing
+
+Serif vs san serif-
+Different Typefaces-
+font weight and font styles and font size - 
+  (16px to 32px ) for normal text
+  long text -20px
+  headines -50px+ and boldness - 600+
+  
+  font weights should not be below 400-
+
+characters in a line 65-72
+
+line height -1.5 -1.7
+letter spacing - -3.5 to -1.0px
+
+all caps for short titles
+align text to left
+===============================================================================================================================
+Implementing Typography-
+
+Designer - based for what this website is  -choose font style e.g. san sarif -inter personality
+
+Goto google fonts website search required personality i.e. inter here 
+
+choose the weight then select it add link before link of css.style.
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+then add 'Inter' in the font-family
+
+font Size -
+  type-scale.com
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+Summary- font family, font size ,line height,letter spacing,
+          font weight (choose when we selected Inter personality from google fonts )
+
+For font size use above mentioned system.
+line height - 1.2 -1.7 for small text | for bold text 1.1-1.4
+letter spacing - -1px - 1px 
+font weight - <400
+
+chars in a line - <75 
+
+===============================================================================================================================
+Web Design Rule #2 COLORS
+
+Color theory.
+**NOTE
+Color should match websites personality-
+choose Good color -open color,tailwind css (css Framework) ,flat UI colors
+at least two type of color : main color and grey color
+accent color :secondary color (with experience you can use it.)
+ligher and darer colors : tint and shade - tint and shade generator, palleton.com, coolors
+use color to draw attension to most important element
+use interesting accents and stands out entire components and sections
+images and illustrations
+dark coloured background use tint of the background.
+ligheten up text.
+never make text too light - coolors
+  contract ration 4:5:1 for small text and 3:1 for large text
+
+
+===============================================================================================================================
+Implementing colors
+
+If it does something => button 
+If it takes your somewhere => link
+
+
+open colors 
+https://yeun.github.io/open-color/
+
+to check contract 
+coolors.com
+
+buttons 
+footer 
+accent section
+
+===============================================================================================================================
+WEB DESIGN RULE #3 IMAGES AND ILLUSTRATIONS
+
+Types of images - product photos [product ], storytelling photos [convey message ], 
+                  illustrations [2D, 3D], patterns
+
+Use images to support the message and story of website.
+Prefer original images - unsplash 
+use real people to trigger emotions
+crop images 
+combining imges types
+
+Handling Text on Images 
+  Darken or brighen the images according to text ( using gradient)
+  position the text in neutral area.
+  put text in box (opacity to box)
+  account for high end images , original image/2 = visible image (2x scale factor) - 
+    -high resolution screen will use 2 px or 3px for 1px hence for high resolution screen 300*300 images 
+    -having 2x scale factor look blury, but normal it is okay. hence we use 600*600 image and display it as 300*300 on 
+    -high resolution screen.
+  compress images
+    -squoosh
+  side by side images should be of same dimension.
+===============================================================================================================================
+WEB DESIGN RULE #4 ICONS
+
+good icon pack
+  phosphor icons 
+  ionicons
+  icons8
+only use one icon pack
+use svg icon or icon font format (dont use .jpg or .png)
+  -vector based 
+  -scale indefinitely without getting unsharp
+adjust to website personality and text typography
+use icons 
+  -to provide visual assistant to text
+  -product feature blocks
+  -icons associated with actions and label them
+  -use icon  as bullet points.
+how to use icons 
+  -same color as text for neutral | Different color as text for drawing attention
+  -enclose the icon in a bigger shape and keep icons small | for big icons keep the thin lines
+ 
+===============================================================================================================================
+Implementing icons-
+
+Use svg icon code 
+
+<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="features-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"
+              />
+            </svg>
+
+.features-icon {
+  stroke : <color rgb/>hexa name>  // for colouring icons
+}
+
+on heroicons.com 
+  for each icon there is default size mentioned as some icons are ment to be used for small size.
+
+for colouring icon 
+  -use stroke in svg 
+  -use fill in solid
+
+Adding icons in list 
+Adding icons in product feature block
+===============================================================================================================================
+WEB DESIGN RULE #5 SHADOWS
+
+after era of 100% flat design back to using shadows (flat design 2.0)
+shadow creates depth (3D) ->more the shadow more away is the element from interface.
+  -can be used on box or text
+
+Uses of shadow based on website design 
+  e.g. dont use shadow in serious looking website | use shadow in fun personality websites.
+use shadows in small doses  | dont use shadow for every element
+go light on shadows | dont use dark shadow
+
+Use shadow
+  -small shadow for small element
+  -medium sized shadow for larger area
+  -large shadwo to float element above rest of interface
+    e.g. navigations and popup windows
+  -changing shadow in mouse interaction
+  -experiment with glows ( coloured shadows)
+===============================================================================================================================
+Implementing shadows-
+
+<figure></figure> element 
+  -is used for the product card 
+
+box-shadow -> property will help to apply shadow to element
+  -box-shadow : <horizontal-offset between box and shadow >  <vertical-offset between in the box and shadow>
+                <blur of the shadow>  <scale of the shadow / radius or border of shadow>  <color of the shadow>
+ 
+ Use low value of opacity in shadow color i.e. rgba(0,0,0,0.3) to rgba(0,0,0,0.1)
+
+
+Text shadows are useful for text on top of the image -
+text-shadow ->
+  -text-shadow : <horizontal-offset between box and shadow >  <vertical-offset between in the box and shadow>
+                <blur of the shadow>  <color of the shadow>
+===============================================================================================================================
+WEB DESIGN RULE #6 BORDER-RADIUS
+
+Less border-radius => serious website 
+More border-radius => more fun website 
+
+Use border-radius 
+  -increase the playfulness and fun of the design, to make it less serious
+  -for buttons, for images, for around icons, for standout sections or other element
+Typefaces have a certain radius: to make sure that border-radius matches that roundness
+===============================================================================================================================
+Implementing border-radius 
+
+
+For complete rounded border around edges-> border-radius ->greater than height
+border-bottom/top-left/right-radius : 100px or 100%
+
+for square elment -> 50% border radius ->complete round around edges
+===============================================================================================================================
+WEB DESIGN RULE #7 WHITESPACES 
+
+whitespaces makes design look clean, modern and polished
+whitespaces communicate how Different pieces of information are related to each other.
+creates invisible relation ship between the layout 
+
+whre to use 
+  -use ton of whitespace
+  -use between group of elements
+  -use whitespace between elements 
+  -use whitespace instead of lines inside a group of elements
+
+how much whitespace 
+  -group of elements should have less space as compared whitespace between other group of elements.
+    -Law of proximity
+  -start with too much whitespace and then remove until it looks right
+  -match other design choices if you have bigger texts of icon then use more whitespace
+  -multiples of 16px 
+
+  -spacing size => 2 4 8 12 16 24 32 48 64 80 96 128  (pixel ofcourse)
+===============================================================================================================================
+WEB DESIGN RULE #8 Visual Hierarchy
+
+select important elements 
+draw attension to the most important ones
+defining a path and guide the website viewer through visual Hierarchy
+use combination of 
+  -position, size, border, spacing, colors, shadows ->
+
+Fundamentals 
+  -postion important elements closer to the top of the page 
+  -attension flows from top to bottom
+  -images draw a lot of attention hence use them mindfully
+  -use whitespace to make important elements standout
+
+Visual Hierarchy for text 
+  -use font size, font weight, color and whitespace to give importance
+  **TIP
+  -emphasize on titles, subtitles, link, buttons, data points, icons
+
+Visual Hierarchy between components(group of elements)
+  -give emphasize by using background color, border,  shadow
+  -try emphasizing some component by de-emphasizing other component.
+  **TIP
+  -emphasize on testimonials, call-to-action sections, highlight sections, preview cards, forms, 
+    pricing tables, important rows/ columns in tables etc.
+===============================================================================================================================
+Implementing whitespace and Visual Hierarchy-
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+whitespace between the sections - tons of whitespace.
+Whitespace between the elements - should not be more than the whitespace between the sections.
+
+===============================================================================================================================
+WEB DESIGN RULE #9 USER EXPERIENCE (UX) 
+
+UI and Ux are part of each other
+
+steve jobs =>Design is not just how it looks like or feels Design is how it works.
+
+UI 
+  -It is the visual representation of a product. 
+  -It's how graphical interface looks like and feels like.
+  -layout 
+  -personality
+  -typography, colors, icons 
+  -UI design ->makes interface beatiful.
+
+UX 
+  -Overall experience of the user while interacting with the product.
+  -logical
+  -should reach user goals and bussincess goals
+  -It make UI useful and functional
+  -UX Design ->makes an interface useful and functional.
+
+UI vs UX 
+  e.g. glass bottle of the catchup  vs  plastic bottle of the catchup.
+
+GOALS 
+  -user goals and bussiness goals => for Goof UX Design . 
+
+UX RUles for usability 
+  -use patterns that user know.
+  -make call to action button most prominant  and make the text descriptive. 
+  -use bluetext and underlined text only for links. 
+  -Animations should have a purpose  and be fast : between 200 and 500ms.
+  -in a form align labels and field such that it would be easy to scan.
+  -offer users a good feedback for the actions e.g. form error or form success.
+  -place the action buttons where they will create an effect (law of locality) [web apps].
+    e.g. add item in todo list is place at the bottom.
+
+UX Rule for website context 
+  -descriptive and keyword focused headlines.
+  -only include relevent information
+  -use simple words.
+  -break long-text.
+===============================================================================================================================
+The Website Personalities -Framework (**NOTE Best Video OF ALL For WEB DESIGN)
+
+**TIP Very Very Important TOPIC - REFER PDF SLIDES
+7 Website personality
+  -should apply web design rules based on website personality.
+  a- Serious / elegent
+  b- Minimalist / simple 
+  c- Plain - / Normal 
+    big companies 
+  d- Bold / Confident
+    software startup, travel, digital agencies 
+  e- Calm/ Peaceful 
+    healthcare , focus on consumer well being
+  f- Statup/ Upbeat 
+  g- Playful /Fun 
+
+
+How to you want website to appear to user? What vibe do you want to tranmit.
+a- Serious / elegent
+  -does not use shadows and border radius
+  -industry -high fashion , jewelry, luxury products, real estates
+
+b- Minimalist / simple 
+
+c- Plain - / Normal 
+
+d- Bold / Confident
+
+e- Calm/ Peaceful 
+
+f- Statup/ Upbeat 
+  uses shadows and border-radius
+
+g- Playful /Fun 
+
+REFER THE PDF SLIDES 
+
+===============================================================================================================================
+The Missing Piece: Steal Like an Artist!
+
+Inspirations - onepage website Inspirations ,land-book, awwwards.com ,screen lana
+
+**TIP
+Before starting to thing about designing look at many websites with choosen web personality
+
+Building a web page means building of layout of components
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+
+
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+
+
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+
+
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
+===============================================================================================================================
